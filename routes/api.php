@@ -19,4 +19,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('hello/{id}', 'Api\HelloController@all');
 
-Route::get('getdata', 'Api\GetdataController@all');
+Route::get('employee/{family_name}/{given_name}/position', 'Api\GetdataController@all');
+
+Route::post('employee/{family_name}/{given_name}/position', 'Api\PostdataController@all');
