@@ -12,12 +12,12 @@ class DepartmentsTableSeeder extends Seeder
     public function run()
     {
       DB::table('departments')->insert([
-          ['id' => '1', 'department_name' => '開発', ],
-          ['id' => '2', 'department_name' => '営業', ],
-          ['id' => '3', 'department_name' => '総務', ],
-          ['id' => '4', 'department_name' => '人事', ],
-          ['id' => '5', 'department_name' => '広報', ],
-          ['id' => '6', 'department_name' => 'その他', ],
+          ['department_id' => '1', 'department_name' => '開発', ],
+          ['department_id' => '2', 'department_name' => '営業', ],
+          ['department_id' => '3', 'department_name' => '総務', ],
+          ['department_id' => '4', 'department_name' => '人事', ],
+          ['department_id' => '5', 'department_name' => '広報', ],
+          ['department_id' => '6', 'department_name' => 'その他', ],
       ]);
     }
 }

@@ -19,11 +19,10 @@ class CreateEmployeesTable extends Migration
             $table->string('given_name', 100);
             $table->string('family_name_kana', 100);
             $table->string('given_name_kana', 100);
-            $table->string('beacon_id', 100);
+            $table->string('beacon_id', 100)->nullable();
             $table->string('division_id', 100);
             $table->string("birthday");
             $table->string("hire_date");
-            $table->string('position', 100)->nullable();
             $table->timestamps();
         });
     }

@@ -13,12 +13,10 @@ class PostdataController extends Controller
   {
     $major = $request->input("major");
     $minor = $request->input("minor");
-    //dd($major, $minor);
     $beacon = Beacon::where("major", $major)->where("minor", $minor)->get()->first();
-    //dd($beacon);
     $employee = Employee::where("family_name_kana", $family_name)
                 ->where("given_name_kana", $given_name);
-    $employee->update(["position" => $beacon->position]);
+    $employee->update(["beacon_id" => $beacon->beacon_id]);
     //dd($employee);
     //$employee->position = $beacon->position;
 
