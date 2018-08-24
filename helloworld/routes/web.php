@@ -14,9 +14,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get("hello", "Hello1Controller@index");
-
-Route::get("greeting", function(){
-  return view("greeting", ["name" => "hotta"]);
-} );
