@@ -22,3 +22,5 @@ Route::get('hello/{id}', 'Api\HelloController@all');
 Route::get('employee/{family_name}/{given_name}/{what}', 'Api\GetdataController@all');
 
 Route::post('employee/{family_name}/{given_name}/position', 'Api\PostdataController@all');
+
+Route::get("position/{position}", "Api\GetpositionController@all");
